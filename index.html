@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Freshman Pomodoro Clock Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icons/Untitled-222.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <main class="app">
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="timer">
+        <div class="button-group mode-buttons" id="js-mode-buttons">
+          <button
+            data-mode="pomodoro"
+            class="button active mode-button"
+            id="js-pomodoro"
+          >
+            Pomodoro
+          </button>
+          <button
+            data-mode="shortBreak"
+            class="button mode-button"
+            id="js-short-break"
+          >
+            Short break
+          </button>
+          <button
+            data-mode="longBreak"
+            class="button mode-button"
+            id="js-long-break"
+          >
+            Long break
+          </button>
+        </div>
+        <div class="clock" id="js-clock">
+          <span id="js-minutes">25</span>
+          <span class="separator">:</span>
+          <span id="js-seconds">00</span>
+        </div>
+        <button class="main-button" data-action="start" id="js-btn">
+          Start
+        </button>
+      </div>
+    </main>
+    <div class="hidden">
+      <audio src="backtowork.mp3" data-sound="pomodoro"></audio>
+      <audio src="break.mp3" data-sound="shortBreak"></audio>
+      <audio src="break.mp3" data-sound="longBreak"></audio>
+    </div>
+
+
+  <footer class="footer">
+    <p class="footer-title">copyright @ <span>Mohamed Mostafa</span></p>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/mohamed-hella/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/mohamed-mostafa-hella"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com/mmh6198/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://twitter.com/mohamedhella98"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/hoomos982021/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
